@@ -1,0 +1,45 @@
+{{ define "login"}}
+
+{{ template "headerForAuht"}}
+
+     <div class="container mt-5 mb-5">
+
+       <div class="row d-flex align-items-center justify-content-center">
+
+         <div class="col-md-6">
+
+           <div class="card px-5 py-5">
+
+             <!-- <span class="circle"><i class="fa fa-check"></i></span> -->
+
+             <small class="mt-2 text-muted">We are pleased to welcome you to our application. Please enter the information below to login</small>
+             <form method="GET" action="/login">
+             <div class="form-input">
+               <i class="fa fa-envelope"></i>
+               <input type="text" name="email" id="email" class="form-control" placeholder="Email address">
+             </div>
+
+             <div class="form-input">
+               <i class="fa fa-lock"></i>
+               <input type="password" name="password" id="password" class="form-control" placeholder="password">               
+             </div>
+
+             <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+               <small class="mt-2 text-muted"> I agree all the statements</small>
+             </div>
+             <br>
+             <button class="btn btn-warning">Login now</button>
+              
+           </div>
+          </form> 
+             {{ template "footer" }}
+         </div>
+
+         </div>
+
+       </div>
+           
+     </div>
+            
+{{ end }}
